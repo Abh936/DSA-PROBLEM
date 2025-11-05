@@ -21,18 +21,18 @@ class Solution {
        if(extra>0) s++;
        if(len==1)  ans[idx++] = temp;
        if(len==s){
-        ListNode a = temp.next;
-        temp.next = null;
-        temp = a;
-        len =1;
-        extra--;
+            ListNode a = temp.next;
+            temp.next = null;
+            temp = a;
+            len =1;
+            extra--;
         }  
-           else{
-                 len++;
-                 temp = temp.next;
-            }
+        else{
+            len++;
+            temp = temp.next;
         }
+     }
        
-        return ans;
+    return ans;
     }
 }
